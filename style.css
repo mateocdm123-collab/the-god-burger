@@ -1,0 +1,392 @@
+/* CONFIGURACIÓN GENERAL */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4442b9cb;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    background-color: #4a74b3a2;
+    color: rgba(235, 238, 241, 0.952);
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/* PRESENTACIÓN */
+
+.presentacion {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #2d57b1;
+    color: white;
+}
+
+.presentacion h2 {
+    font-size: 40px;
+}
+
+.presentacion p {
+    font-size: 20px;
+}
+
+
+/* BOTÓN */
+
+button {
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* SECCIONES */
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+/* HAMBURGUESAS */
+
+.hamburguesas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hamburguesa {
+    background-color: rgba(253, 249, 249, 0.678);
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.precio {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #4a32b4d3;
+    color: rgb(184, 162, 162);
+    text-align: center;
+    padding: 20px;
+}
+.boton {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ff4b35;
+    color: white;
+    border: 2px solid #ffca65;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton:hover {
+    filter: brightness(1.15);
+}
+
+/* Mejoras para el formulario */
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 25px auto 0;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+fieldset label {
+    display: block;
+}
+
+fieldset input,
+fieldset textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+fieldset textarea {
+    resize: vertical;
+}
+
+fieldset button {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    fieldset {
+        padding: 15px;
+    }
+}
+
+/* Ajustes para las tarjetas del menú en celular */
+@media (max-width: 600px) {
+    .hamburguesa {
+        padding: 18px 15px;
+    }
+
+    .hamburguesa h3 {
+        margin-top: 10px;
+    }
+
+    .hamburguesa p {
+        line-height: 1.4;
+    }
+}
+
+/* PRIMERA ETAPA: identidad retro arcade */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #17152e;
+    color: #f5edda;
+    font-family: "Courier New", monospace;
+}
+
+header {
+    background-color: #211d43;
+    color: #ffd166;
+    border-bottom: 3px solid #ff6b35;
+}
+
+nav a {
+    display: inline-block;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+.presentacion {
+    background-color: #29245b;
+    border-bottom: 3px dashed #ff6b35;
+}
+
+.presentacion h2 {
+    text-transform: uppercase;
+}
+
+.hamburguesa {
+    background-color: #211d43;
+    color: #f5edda;
+    border: 2px solid #ffd166;
+    border-radius: 0;
+}
+
+.precio {
+    color: #ffd166;
+}
+
+.boton,
+button {
+    font-family: inherit;
+    font-weight: bold;
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.boton:hover,
+button:hover {
+    filter: brightness(1.2);
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #211d43;
+    color: #ffd166;
+    border-top: 3px dashed #ff6b35;
+}
+
+/* THE GOD BURGER - ARCADE 1980s */
+
+/* Tipografía pixelada para los títulos */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #17152e;
+    color: #f5edda;
+    font-family: "Courier New", monospace;
+}
+
+/* Títulos principales */
+header h1,
+.presentacion h2,
+section h2 {
+    font-family: "Press Start 2P", "Courier New", monospace;
+    line-height: 1.6;
+    text-shadow: 3px 3px 0 #ff4b35;
+}
+
+/* Encabezado */
+header {
+    background-color: #100e24;
+    border-bottom: 4px solid #ff4b35;
+    box-shadow: 0 4px 0 #ffd166;
+}
+
+/* Navegación */
+nav a {
+    padding: 8px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+    text-shadow: 0 0 8px #ffd166;
+}
+
+/* Presentación */
+.presentacion {
+    background-color: #211d43;
+    border-bottom: 4px dashed #ff4b35;
+}
+
+/* Tarjetas de hamburguesas */
+.hamburguesa {
+    background-color: #100e24;
+    color: #f5edda;
+    border: 3px solid #ffd166;
+    border-radius: 0;
+    box-shadow: 5px 5px 0 #ff4b35;
+    transition: transform 0.2s ease;
+}
+
+.hamburguesa:hover {
+    transform: translateY(-4px);
+}
+
+.hamburguesa h3 {
+    color: #ffd166;
+}
+
+.precio {
+    color: #ff6b35;
+}
+
+/* Botones arcade */
+.boton,
+button {
+    background-color: #ff4b35;
+    color: white;
+    border: 3px solid #ffd166;
+    border-radius: 0;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0 #8d294e;
+    transition: transform 0.15s ease;
+}
+
+.boton:hover,
+button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #8d294e;
+}
+
+/* Formulario */
+fieldset {
+    border: 2px solid #ffd166;
+    background-color: #211d43;
+}
+
+fieldset legend {
+    color: #ffd166;
+    font-weight: bold;
+}
+
+fieldset input,
+fieldset textarea {
+    box-sizing: border-box;
+    background-color: #100e24;
+    color: #f5edda;
+    border: 2px solid #7770c9;
+    border-radius: 0;
+}
+
+fieldset input:focus,
+fieldset textarea:focus {
+    outline: 2px solid #ffd166;
+}
+
+/* Pie de página */
+footer {
+    background-color: #100e24;
+    color: #ffd166;
+    border-top: 4px dashed #ff4b35;
+}
+
+/* Ajustes para celular */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .presentacion h2,
+    section h2 {
+        font-size: 19px;
+    }
+
+    .hamburguesa {
+        box-shadow: 3px 3px 0 #ff4b35;
+    }
+}
+
+/* Centrar la hamburguesa destacada */
+#destacada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#destacada .hamburguesa {
+    width: 100%;
+    max-width: 320px;
+    margin: 10px auto;
+}
+
+/* Mascota pixel art de The God Burger */
+
+.imagen-burger {
+    display: block;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    margin: 15px auto;
+    image-rendering: pixelated;
+}
