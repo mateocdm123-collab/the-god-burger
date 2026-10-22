@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>The God Burger</title>
+    <meta
+        name="description"
+        content="Descubrí The God Burger: hamburguesas caseras, acompañamientos y mucho sabor con estilo propio."
+    >
+
+    <title>The God Burger | Hamburguesas</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,9 +18,9 @@
 <body>
 
     <header>
-        <h1>THE GOD BURGER </h1>
+        <h1>THE GOD BURGER</h1>
 
-        <nav>
+        <nav aria-label="Navegación principal">
             <a href="index.html">Inicio</a>
             <a href="menu.html">Menú</a>
             <a href="#nosotros">Nosotros</a>
@@ -26,6 +30,7 @@
 
     <main>
 
+        <!-- PRESENTACIÓN PRINCIPAL -->
         <section id="inicio" class="presentacion">
             <h2>Las mejores hamburguesas</h2>
 
@@ -34,24 +39,26 @@
                 Hamburguesas caseras, papas y mucho sabor.
             </p>
 
-            <a class="boton" href="menu.html">Ver nuestro menú</a>
+            <a class="boton" href="menu.html">
+                Ver nuestro menú
+            </a>
         </section>
 
+        <!-- BURGER DESTACADA -->
         <section id="destacada">
             <h2>Burger del mes</h2>
 
             <article class="hamburguesa">
                 <h3>Crunchy Onion</h3>
 
+                <div class="burger-imagen">
+                    <img
+                        src="imagens/burger.jpeg"
+                        alt="Hamburguesa pixel art de The God Burger"
+                        class="imagen-burger"
+                    >
+                </div>
 
-         <img
-    src="imagenes/hamburguesa-pixel.png.jpeg"
-    alt="Hamburguesa pixel art"
-    class="imagen-burger"
->
->
-
-    
                 <p>
                     Doble carne, mozzarella, cebolla crispy,
                     mayonesa de ajo y pepinos agridulces.
@@ -59,89 +66,139 @@
 
                 <p class="precio">$19.000</p>
 
-                <a class="boton" href="menu.html">Ver carta completa</a>
+                <a class="boton" href="menu.html">
+                    Ver carta completa
+                </a>
             </article>
         </section>
 
+        <!-- BENEFICIOS -->
+        <section id="beneficios">
+            <h2>¿Por qué elegirnos?</h2>
+
+            <div class="beneficios-grid">
+
+                <article class="beneficio">
+                    <h3>🍔 Sabor auténtico</h3>
+                    <p>
+                        Hamburguesas preparadas con combinaciones
+                        pensadas para disfrutar cada bocado.
+                    </p>
+                </article>
+
+                <article class="beneficio">
+                    <h3>🧀 Variedad de sabores</h3>
+                    <p>
+                        Diferentes hamburguesas y acompañamientos
+                        para encontrar tu combinación favorita.
+                    </p>
+                </article>
+
+                <article class="beneficio">
+                    <h3>🎮 Estilo único</h3>
+                    <p>
+                        Una experiencia inspirada en los videojuegos
+                        arcade y la estética retro.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SOBRE NOSOTROS -->
         <section id="nosotros">
             <h2>Sobre nosotros</h2>
 
             <p>
                 Somos un emprendimiento dedicado a preparar
                 hamburguesas con ingredientes de calidad y mucho sabor.
+                En The God Burger combinamos nuestra pasión por las
+                hamburguesas con una identidad inspirada en los
+                videojuegos clásicos.
             </p>
         </section>
 
+        <!-- CONTACTO -->
         <section id="contacto">
             <h2>Contacto</h2>
 
             <p>Encontranos en nuestras redes sociales.</p>
             <p>Instagram: @thegodburger</p>
 
-           
-
-    <form action="https://formsubmit.co/thegodbuger2003@gmail.com" method="POST">
-    <input type="hidden" name="_subject" value="Nueva consulta - The God Burger">
-    <fieldset>
-        <legend>Dejanos tu consulta</legend>
-
-        <div>
-            <label for="nombre">Tu nombre:</label>
-            <input
-                type="text"
-                id="nombre"
-                name="nombre"
-                placeholder="Escribí tu nombre"
-                required
+            <form
+                action="https://formspree.io/f/xbgdnbgb"
+                method="POST"
             >
-        </div>
 
-        <div>
-            <label for="correo">Tu correo electrónico:</label>
-            <input
-                type="email"
-                id="correo"
-                name="email"
-                placeholder="nombre@ejemplo.com"
-                required
-            >
-        </div>
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="Nueva consulta - The God Burger"
+                >
 
-        <div>
-            <label for="asunto">Asunto:</label>
-            <input
-                type="text"
-                id="asunto"
-                name="asunto"
-                placeholder="Motivo de tu consulta"
-                required
-            >
-        </div>
+                <fieldset>
+                    <legend>Dejanos tu consulta</legend>
 
-        <div>
-            <label for="mensaje">Tu mensaje:</label>
-            <textarea
-                id="mensaje"
-                name="mensaje"
-                rows="4"
-                placeholder="Escribí tu consulta"
-                required
-            ></textarea>
-        </div>
+                    <div>
+                        <label for="nombre">Tu nombre:</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Escribí tu nombre"
+                            required
+                        >
+                    </div>
 
-        <button type="submit">Enviar consulta</button>
-        
-    </fieldset>
-</form>
+                    <div>
+                        <label for="correo">
+                            Tu correo electrónico:
+                        </label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="email"
+                            placeholder="nombre@ejemplo.com"
+                            required
+                        >
+                    </div>
 
+                    <div>
+                        <label for="asunto">Asunto:</label>
+                        <input
+                            type="text"
+                            id="asunto"
+                            name="asunto"
+                            placeholder="Motivo de tu consulta"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="mensaje">Tu mensaje:</label>
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="4"
+                            placeholder="Escribí tu consulta"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit">
+                        Enviar consulta
+                    </button>
+
+                </fieldset>
+            </form>
         </section>
 
     </main>
 
     <footer>
         <p>© 2026 The God Burger</p>
+        <p>Gracias por visitarnos. ¡Volvé por otra partida!</p>
     </footer>
 
 </body>
 </html>
-
